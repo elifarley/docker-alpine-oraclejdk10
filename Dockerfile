@@ -3,7 +3,7 @@ MAINTAINER Elifarley <elifarley@gmail.com>
 ENV BASE_IMAGE=elifarley/docker-alpine-glibc
 
 ARG JAVA_VERSION=10.0.2
-RG JAVA_UPDATE=13
+ARG JAVA_UPDATE=13
 #ARG JAVA_BUILD=
 
 RUN apk --update add ca-certificates curl && \
